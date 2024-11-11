@@ -44,6 +44,7 @@ aws ec2 describe-snapshots --owner-ids 123456789123 --query 'Snapshots[*].[Snaps
 Replace 123456789123 with your actual AWS account ID.
 
 Output
+```
 ---------------------------------------------------
 |               DescribeSnapshots                 |
 +---------------------+---------------------------+
@@ -51,3 +52,4 @@ Output
 |  snap-0ijklmnop1234qrst | Web Server Logs        |
 |  snap-0uvwxyz1234567890 | Customer Data Archive  |
 ---------------------------------------------------
+```
