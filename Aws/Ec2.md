@@ -33,6 +33,7 @@ Since snapshots are stored regionally, attackers seek to determine which regions
   - Querying known service endpoints, such as `*.compute.amazonaws.com`, can sometimes reveal regional information.
   - Running reverse DNS lookups on IPs associated with the target might also return region-specific AWS IP ranges.
 
+![image (2)](https://github.com/user-attachments/assets/d2eedac8-ca5d-4ca7-ba96-d85afc9fcb45)
 
 ### AWS CLI Command Example
 
@@ -43,13 +44,5 @@ aws ec2 describe-snapshots --owner-ids 123456789123 --query 'Snapshots[*].[Snaps
 ```
 Replace 123456789123 with your actual AWS account ID.
 
-Output
-```
----------------------------------------------------
-|               DescribeSnapshots                 |
-+---------------------+---------------------------+
-|  snap-0abcd1234efgh5678 | Production DB Backup   |
-|  snap-0ijklmnop1234qrst | Web Server Logs        |
-|  snap-0uvwxyz1234567890 | Customer Data Archive  |
----------------------------------------------------
-```
+![image (3)](https://github.com/user-attachments/assets/92af7e2a-b24e-4721-ae9a-ca9db378aaca)
+
